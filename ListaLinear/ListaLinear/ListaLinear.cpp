@@ -1,4 +1,4 @@
-// Jo„o Victor Alves da Silva
+// Jo√£o Victor Alves da Silva
 
 #include <iostream>
 using namespace std;
@@ -104,5 +104,27 @@ void inserirElemento()
 
 // deve ser implementada como resposta ao exercicio
 void buscarElemento()
-{
+{	
+	int n;
+	bool achar = false;
+
+	cout << "Digite um valor para buscar: ";
+	cin >> n;
+
+	for (int c = 0; c < nElementos; c++) 
+	{
+		if (n == lista[c]){
+			achar = true;
+
+			cout << "Encontrado na posicao: " << c;
+			cout << endl << endl;
+		}
+	}
+
+	if (achar == false)
+	{
+		cout << "Nao encontrado \n";
+	}
+
+	
 }
